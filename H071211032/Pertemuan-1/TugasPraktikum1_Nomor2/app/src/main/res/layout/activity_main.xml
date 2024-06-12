@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:id="@+id/selections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/selection_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Pilih bangun ruang : "
+                android:textSize="50px"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/selectionDropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/selection_dialog"
+                android:spinnerMode="dropdown"
+                android:entries="@array/geometry"/>
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/containerContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:measureAllChildren="false"
+            app:layout_constraintTop_toBottomOf="@id/selections"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/ball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ball_dialogue_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jari - jari"
+                    android:layout_alignParentTop="true"/>
+
+                <EditText
+                    android:id="@+id/jariJariBola"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ball_dialogue_1"
+                    android:inputType="number"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cone_dialogue_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jari - jari"
+                    android:layout_alignParentTop="true"/>
+
+                <EditText
+                    android:id="@+id/jariJariKerucut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cone_dialogue_1"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/cone_dialogue_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tinggi"
+                    android:layout_below="@id/jariJariKerucut"/>
+
+                <EditText
+                    android:id="@+id/tinggiKerucut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cone_dialogue_2"
+                    android:inputType="number"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/balok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/block_dialogue_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Panjang"
+                    android:layout_alignParentTop="true"/>
+
+                <EditText
+                    android:id="@+id/panjangBalok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/block_dialogue_1"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/block_dialogue_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lebar"
+                    android:layout_below="@id/panjangBalok"/>
+
+                <EditText
+                    android:id="@+id/lebarBalok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/block_dialogue_2"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/block_dialogue_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tinggi"
+                    android:layout_below="@id/lebarBalok"/>
+
+                <EditText
+                    android:id="@+id/tinggiBalok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/block_dialogue_3"
+                    android:inputType="number"/>
+            </RelativeLayout>
+
+        </ViewFlipper>
+
+        <Button
+            android:id="@+id/calculate"
+            app:layout_constraintTop_toBottomOf="@id/containerContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HITUNG"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/calculate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="HASIL"
+            android:textStyle="bold"
+            android:textSize="50px"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

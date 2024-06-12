@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TugasPraktikum1_Nomor2</string>
+
+    <string-array name="geometry">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+
+    <string name="result">HASIL</string>
+    <string name="ball_radius_warning">Masukkan radius bola!</string>
+
+    <string name="cone_radius_warning">Masukkan radius kerucut!</string>
+    <string name="cone_height_warning">Masukkan tinggi kerucut!</string>
+
+    <string name="block_length_warning">Masukkan panjang balok!</string>
+    <string name="block_height_warning">Masukkan tinggi balok!</string>
+    <string name="block_width_warning">Masukkan lebar balok!</string>
+
+    <string name="result_warning">Tolong Lengkapi Input!</string>
+
+    <string name="no_input_warning">Field ini belum anda diisi!</string>
+</resources>

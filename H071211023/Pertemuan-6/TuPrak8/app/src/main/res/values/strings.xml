@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TuPrak 8</string>
+    <string name="bottom_navigation_home">Beranda</string>
+    <string name="bottom_navigation_add">Add</string>
+    <string name="bottom_navigation_person">Profile</string>
+    <string name="bottom_navigation_search">Search</string>
+    <string name="name">Fadilah Istiqamah</string>
+    <string name="username">fadilaahistq</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

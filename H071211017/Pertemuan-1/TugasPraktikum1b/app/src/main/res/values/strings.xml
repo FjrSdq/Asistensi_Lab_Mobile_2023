@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TugasPraktikum1b</string>
+    <string-array name="bangun_ruang">
+        <item>Kubus</item>
+        <item>Bola</item>
+        <item>Silinder</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+</resources>

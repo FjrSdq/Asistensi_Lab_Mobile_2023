@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <TextView
+        android:id="@+id/NewPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="New Post"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/CardPostPic"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardPostPic"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:id="@+id/PostPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_icon"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/Caption"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        app:layout_constraintStart_toEndOf="@+id/CardPostPic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:hint="Write a Caption"
+        android:background="@android:color/transparent"
+
+        />
+
+    <Button
+        android:id="@+id/Postbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CardPostPic"
+        android:layout_marginTop="30dp"
+        android:text="Post"/>
+        
+        
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
+

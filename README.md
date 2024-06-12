@@ -25,5 +25,6 @@
 - Setelah perintah tersebut berhasil, silahkan membuka repository hasil fork kalian di github dan lakukan pull request ke repository ini. 
 - Apabila terdapat kesulitan, silahkan menghubungi asisten yang bersangkutan
 - Cara Mudah untuk push di repo setelah di fork itu bisa melalui website Github langsung saja, untuk tutorialnya silahkan [cek disini](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
+- Untuk aplikasi nya, dibuatkan folder terpisah sesuai dengan folder kode tugasnya, contoh Tugas-2/App/file.apk
 
 

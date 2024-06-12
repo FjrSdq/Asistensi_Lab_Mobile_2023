@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3dfed"
+    android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        card_view:cardCornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        android:padding="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:shapeAppearanceOverlay="@style/item"
+            android:src="@drawable/cinnamoroll"
+            android:background="@color/material_dynamic_neutral50"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/Nama1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cinnamoroll"
+                android:textColor="#77a9c9"
+                android:fontFamily="@font/daysans"
+                android:textSize="20dp"
+                android:layout_marginLeft="120dp"/>
+            <TextView
+                android:id="@+id/Nama2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cinniipuppiii"
+                android:textSize="18dp"
+                android:fontFamily="@font/purplesmile"
+                android:textColor="#aac2e6"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="120dp"/>
+
+            <ImageView
+                android:id="@+id/picture1"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/baseline_image_24"/>
+
+            <TextView
+                android:id="@+id/caption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="caption"
+                android:textSize="15dp"
+                android:textColor="#77a9c9"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/purplesmile"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

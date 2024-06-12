@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/box_background">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:src="@drawable/baseline_search_24" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/cancelSearch"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:src="@drawable/baseline_cancel_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_empty_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:text="there are no notes"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="+"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/purple_700"
+        app:cornerRadius="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/item_note" />
+
+</RelativeLayout>

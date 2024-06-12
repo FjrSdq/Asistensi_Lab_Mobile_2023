@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/backround_quiz"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/dokdo"
+        android:text="Quiz TWK"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="70sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#8A3A3F47"
+        app:cardCornerRadius="25dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#B95D646F">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="@color/white"
+                    android:background="@color/abu"
+                    android:src="@drawable/baseline_camera_alt_24"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/circular" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:cardCornerRadius="20dp">
+                    <EditText
+                        android:id="@+id/entername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter your name"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:padding="10dp"
+                        android:textSize="20sp"
+                        android:background="@null"
+                        android:textColor="@color/black"
+                        android:inputType="textPersonName"/>
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/bestscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/yellow"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text="Apply"
+                    android:textSize="25sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/yellow"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text="Play"
+                    android:textSize="25sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

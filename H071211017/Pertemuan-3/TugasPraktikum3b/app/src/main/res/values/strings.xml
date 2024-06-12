@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tugas Praktikum 3b</string>
+    <string name="masukkan_nama">Masukkan username</string>
+    <string name="apply">Apply</string>
+    <string name="play">Play!</string>
+    <string name="username">Username</string>
+    <string name="best_score">Best Score: </string>
+    <string name="_0">0</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="quiz_app">Quiz App</string>
+    <string name="quiz_1_of_5">Quiz 1 of 5</string>
+    <string name="game_over">Game Over</string>
+</resources>

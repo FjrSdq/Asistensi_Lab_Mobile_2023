@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".QuestionActivity"
+    android:background="@drawable/_4b7a6a15553949a8705d7a980c2c0a3">
+
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marvel Trivia App"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="30dp">
+        <TextView
+            android:id="@+id/question_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1 of 5"
+            android:textSize="30dp"
+            android:textColor="@color/orange"
+            android:paddingHorizontal="10dp"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginBottom="70dp">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questions here"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <Button
+        android:id="@+id/option_1"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="Option 1"
+        android:textAllCaps="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/option_2"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="Option 2"
+        android:textAllCaps="true"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/option_3"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="Option 3"
+        android:textAllCaps="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/option_4"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="Option 4"
+        android:textAllCaps="true"
+        android:onClick="onClick"/>
+</LinearLayout>

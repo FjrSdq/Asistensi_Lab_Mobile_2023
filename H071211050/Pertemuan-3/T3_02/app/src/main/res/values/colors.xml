@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="French_Grey">#FFC8BFC7</color>
+    <color name="Black_Roy">#FF2E2532</color>
+    <color name="Raisin_Black">#FF201A23</color>
+    <color name="Magenta_Haze">#FF9E4770</color>
+    <color name="Eminence">#FF631D76</color>
+    <color name="Red_Violet">#B51A4B</color>
+    <color name="Cerulean_Blue">#26D58F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

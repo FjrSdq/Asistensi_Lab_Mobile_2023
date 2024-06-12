@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_gradient">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingBottom="20dp"
+     >
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/film"
+        android:layout_marginTop="-25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/judul"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/poster"
+      app:layout_constraintStart_toStartOf="parent"
+      android:text="Stealing Raden Saleh"
+      android:textColor="@color/white"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      android:layout_marginLeft="20dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:rating="4.0"
+        android:background="@color/white"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_like"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ratingBar"
+        app:layout_constraintBottom_toBottomOf="@id/ratingBar"
+        android:layout_marginRight="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_favorite_24"
+        app:tint="@color/black"
+        android:backgroundTint="@color/white"
+        app:maxImageSize="30dp"
+        app:fabCustomSize="50dp"
+        />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ratingBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardBackgroundColor="#A0A5A4"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="10dp"
+              >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Synopsis"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sinopsis"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cast"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+               />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginBottom="20dp"
+              >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <ImageView
+                  android:layout_width="90dp"
+                  android:layout_height="110dp"
+                  android:src="@drawable/iqbal"
+                  android:layout_marginRight="40dp"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Iqbaal Ramadhan"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Piko"
+                  android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <ImageView
+                  android:layout_width="90dp"
+                  android:layout_height="110dp"
+                  android:src="@drawable/rachel"
+                  android:layout_marginRight="40dp"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Rachel Amanda"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Fella"
+                  android:textColor="@color/black"
+                  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <ImageView
+                  android:layout_width="90dp"
+                  android:layout_height="110dp"
+                  android:src="@drawable/arirham"
+                  android:layout_marginRight="40dp"
+                  />
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Ari Irham"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Tuktuk"
+                  android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <ImageView
+                  android:layout_width="90dp"
+                  android:layout_height="110dp"
+                  android:src="@drawable/aghiny"
+                  android:layout_marginRight="40dp"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Aghniny Haque"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Sarah"
+                  android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <ImageView
+                  android:layout_width="90dp"
+                  android:layout_height="110dp"
+                  android:src="@drawable/umay"
+                  android:layout_marginRight="40dp"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Umay Shahab"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Gofar"
+                  android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <ImageView
+                  android:layout_width="90dp"
+                  android:layout_height="110dp"
+                  android:src="@drawable/angga"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Angga Yunanda"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"/>
+              <TextView
+                  android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Ucup"
+                  android:textColor="@color/black"/>
+            </LinearLayout>
+          </LinearLayout>
+        </HorizontalScrollView>
+          </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

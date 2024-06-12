@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TuPrak 2</string>
+    <string name="pilih">Pilih Bangun Ruang :</string>
+    <string name="jari">Jari-jari</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="lebar">Lebar</string>
+    <string name="Panjang">Panjang</string>
+    <string-array name="bruang">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/Foto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/arjuna_edited_blue_3x4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="ARJUNA RIBAL"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/Foto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="60px"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NIM"
+        android:text="H071211032"
+        android:textSize="40px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Table"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NIM"
+        android:layout_marginTop="30dp">
+    <TableRow>
+        <TextView
+            android:text="21"
+            android:padding="3dip"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60px"/>
+        <TextView
+            android:text="321"
+            android:padding="3dip"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60px"/>
+        <TextView
+            android:text="123"
+            android:padding="3dip"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60px"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Respositories"
+            android:padding="9dip"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+        <TextView
+            android:text="Followers"
+            android:padding="9dip"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+        <TextView
+            android:text="Following"
+            android:padding="9dip"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+    </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Table"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec lacus efficitur, pharetra lorem in, posuere sapien. Ut tristique mollis tellus, consectetur rutrum urna consectetur a. Maecenas in risus a nunc posuere fringilla. Nullam in mollis mauris. Proin sed congue mauris. Ut aliquam, risus nec posuere condimentum, arcu nisi porta metus, ut tempus turpis nisi id lorem. Nam sed odio vel felis congue gravida nec vitae dolor. Morbi et nulla rutrum, imperdiet lorem eget, bibendum sem."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/About" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

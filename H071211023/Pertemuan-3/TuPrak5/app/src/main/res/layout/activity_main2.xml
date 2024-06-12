@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/backround_quiz"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/dokdo"
+        android:text="Quiz TWK"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="70sp" />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:text="Quiz 1 of 5"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="350dp"
+            android:layout_height="125dp"
+            android:background="@drawable/bg_question"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_option">
+        </View>
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <View
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_option">
+
+        </View>
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amaranth_bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <View
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_option">
+
+        </View>
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amaranth_bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <View
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_option">
+
+        </View>
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amaranth_bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"/>
+    </FrameLayout>
+
+</LinearLayout>
